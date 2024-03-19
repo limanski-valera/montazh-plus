@@ -1,0 +1,50 @@
+<div id="popup" aria-hidden="true" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <button data-close type="button" class="popup__close">
+                <span class="_icon-exit"></span>
+            </button>
+            <div class="popup__body">
+                <h2 class="popup__title">Залиште свої дані та ми Вам зателефонуємо</h2>
+                <form
+                    data-ajax
+                    method="post"
+                    data-popup-message="#popup-thanks"
+                    action="components/sendmail/sendmail.php"
+                    class="popup__form form-popup"
+                >
+                    <input
+                        type="tel"
+                        class="form-popup__input input"
+                        name="phone"
+                        required
+                        placeholder="+38 (090) 000 00 00"
+                    />
+                    <input
+                        type="text"
+                        class="form-popup__input input"
+                        name="fio"
+                        required
+                        placeholder="Ваше ім’я та прізвище"
+                    />
+                    <input
+                        type="text"
+                        class="form-popup__input input"
+                        name="address"
+                        required
+                        placeholder="Адреса об’єкта *"
+                    />
+                    <textarea
+                        name="message"
+                        placeholder="Коментар"
+                        id=""
+                        cols="30"
+                        rows="10"
+                        class="form-popup__textarea input"
+                    ></textarea>
+                    <button class="form-popup__button button button--gold">Надіслати</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

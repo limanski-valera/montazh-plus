@@ -1,0 +1,91 @@
+.header {
+    color: var(--color-light-gray);
+    padding: toRem(20) 0;
+    font-family: "Rubik", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    @media (max-width: $mobile) {
+        padding: toRem(30) 0 toRem(15);
+    }
+    transition:
+        top 0.5s,
+        background-color 0.3s,
+        padding 0.3s;
+    &._header-scroll {
+        top: -300px;
+    }
+    &._header-show {
+        top: 0;
+        background-color: var(--color-text-paragraph);
+        padding: toRem(10) 0;
+    }
+    &__container {
+        display: flex;
+        gap: toRem(30);
+        align-items: center;
+    }
+    &__logo-wrapper {
+        flex: 1 0 auto;
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 auto;
+        }
+    }
+    &__logo {
+        display: inline-block;
+        max-width: toRem(123);
+        transition: transform 0.3s;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        &:active {
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    &__menu {
+    }
+    &__active {
+        display: flex;
+        align-items: center;
+        column-gap: toRem(20);
+        flex: 0 0 auto;
+        @media (min-width: $tablet) {
+            @media (max-width: toEm(1150)) {
+                flex-direction: column;
+                row-gap: toRem(10);
+                align-items: center;
+            }
+        }
+        @media (max-width: $mobileSmall) {
+            gap: toRem(14);
+        }
+    }
+    &__call {
+    }
+    &__consult-button {
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+}
+.menu {
+    &__body {
+    }
+    &__list {
+    }
+    &__item {
+    }
+    &__link {
+    }
+    &__icon {
+    }
+}
+.icon-menu {
+}

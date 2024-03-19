@@ -1,0 +1,97 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.link {
+    transition: color 0.3s;
+    @media (any-hover: hover) {
+        &:hover {
+            color: var(--color-gold);
+        }
+    }
+    &:active {
+        color: var(--color-gold);
+    }
+}
+//========================================================================================================================================================
+.title-block {
+    @media (max-width: $tablet) {
+        justify-content: space-between;
+    }
+    @media (min-width: $mobile) {
+        display: flex;
+        @include adaptiveValue("gap", 50, 30);
+        align-items: flex-end;
+    }
+    &__main-content {
+        @media (min-width: $mobile) {
+            flex: 0 0 46.774194%; /* 580/1240 */
+        }
+    }
+    &__title {
+        @include adaptiveValue("font-size", 40, 24);
+        text-transform: uppercase;
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 10, 4);
+        }
+    }
+    &__sub-title {
+        @include adaptiveValue("font-size", 20, 14);
+        color: var(--color-text-na);
+        font-weight: 200;
+    }
+    &__label {
+        text-transform: uppercase;
+        text-align: right;
+        color: var(--color-gold);
+        font-size: toRem(18);
+        font-weight: 400;
+        @media (max-width: $tablet) {
+            text-align: right;
+        }
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+}
+//========================================================================================================================================================
+// Marque
+.marquee {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 20px;
+}
+.marquee__items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    min-width: 100%;
+}
+.marquee__item {
+    display: flex;
+    gap: toRem(20);
+    align-items: center;
+    color: var(--color-text-paragraph);
+    &::before {
+        content: "";
+        width: toRem(10);
+        height: toRem(10);
+        flex: 0 0 auto;
+        border-radius: 50%;
+        background-color: var(--color-text-paragraph);
+    }
+}
+.marquee__items {
+    animation: scroll 20s linear infinite;
+}
+.reverce {
+    animation-direction: reverse;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
