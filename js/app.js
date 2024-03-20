@@ -748,6 +748,13 @@
                             method: formMethod,
                             body: formData
                         });
+                        if (form.hasAttribute("data-google-forms")) {
+                            const googleFormsUrl = form.dataset.googleForms;
+                            await fetch(googleFormsUrl, {
+                                method: "post",
+                                body: formData
+                            });
+                        }
                         if (response.ok) {
                             let responseResult = await response.json();
                             form.classList.remove("_sending");

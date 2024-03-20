@@ -820,6 +820,9 @@ body::after {
   position: relative;
   min-height: 100%;
 }
+.about .super-spollers__image-wrapper {
+  padding-bottom: 58.793103%; /* 341/580 */
+}
 @media (any-hover: hover) {
   .super-spollers__image-wrapper:hover img {
     transform: scale(1.05);
@@ -1206,7 +1209,7 @@ body::after {
 .button-to-top {
   position: fixed;
   z-index: 10;
-  top: 5rem;
+  bottom: 0.9375rem;
   right: 0.9375rem;
   height: 3.125rem;
   width: 3.125rem;
@@ -1532,40 +1535,12 @@ body::after {
     gap: 0.625rem;
   }
 }
-.menu-footer__list {
-  display: flex;
-  color: var(--color-light-gray);
-}
-@media (min-width: 77.5em) {
-  .menu-footer__list {
-    gap: 12.8125rem;
-  }
-}
-@media (min-width: 62em) and (max-width: 77.5em) {
-  @supports (gap: clamp( 10.3125rem , 0.3125rem  +  16.1290322581vw , 12.8125rem )) {
-    .menu-footer__list {
-      gap: clamp( 10.3125rem , 0.3125rem  +  16.1290322581vw , 12.8125rem );
-    }
-  }
-  @supports not (gap: clamp( 10.3125rem , 0.3125rem  +  16.1290322581vw , 12.8125rem )) {
-    .menu-footer__list {
-      gap: calc(10.3125rem + 2.5 * (100vw - 62rem) / 15.5);
-    }
-  }
-}
-@media (max-width: 62em) {
-  .menu-footer__list {
-    gap: 10.3125rem;
-  }
-}
 @media (max-width: 61.99875em) {
-  .menu-footer__list {
-    gap: 2.5rem;
-    justify-content: space-between;
-    white-space: nowrap;
-    flex-wrap: wrap;
+  .menu-footer__link {
+    display: none;
   }
 }
+
 @media (min-width: 78.6875em) {
   .home__main-block:not(:last-child) {
     margin-bottom: 7.5rem;
@@ -2390,9 +2365,17 @@ body::after {
 }
 @media (max-width: 47.99875em) {
   .section-specialize__image {
-    display: none;
     padding-bottom: 71.428571%; /* 240/336 */
     position: relative;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px 0px rgba(119, 114, 114, 0.45);
+  }
+  .section-specialize__image:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+  ._mob-active .section-specialize__image {
+    display: none;
   }
 }
 .section-specialize__image img {
@@ -2504,10 +2487,14 @@ body::after {
 }
 @media (max-width: 47.99875em) {
   .section-specialize__slider {
+    display: none;
     position: relative;
   }
   .section-specialize__slider:not(:last-child) {
     margin-bottom: 1.25rem;
+  }
+  ._mob-active .section-specialize__slider {
+    display: block;
   }
 }
 .section-specialize__slide {

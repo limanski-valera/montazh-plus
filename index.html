@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240320173544">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240320195704">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -654,10 +654,10 @@
 									</p>
 								</div>
 							</div>
-							<form data-ajax method="post" data-popup-message="#popup-thanks" action="components/sendmail/sendmail.php" class="consult__form form-consult">
+							<form data-ajax method="post" data-google-forms="https://script.google.com/macros/s/AKfycbypE_TxcpEo1FKbkNuAUsZGMCZfOpH2Qn3tcvUsz2l58_oYjKE5r6BDFUOu5-uh_L0c_g/exec" data-popup-message="#popup-thanks" action="components/sendmail/sendmail.php" class="consult__form form-consult">
 								<div class="form-consult__body">
-									<input type="tel" class="form-consult__input input" placeholder="+38 (000) 000 00 00" required />
-									<input type="text" class="form-consult__input input" placeholder="Ваше ім’я та прізвище" required />
+									<input type="tel" class="form-consult__input input" placeholder="+38 (000) 000 00 00" required name="p1" />
+									<input type="text" class="form-consult__input input" placeholder="Ваше ім’я та прізвище" required name="p2" />
 									<button class="form-consult__button button button--gold">
 										Отримати консультацію
 									</button>
@@ -826,19 +826,9 @@
 			<div class="footer__container">
 				<div class="footer__main">
 					<a href="#" class="footer__logo"><img src="img/logo.svg" alt="" /></a>
-					<nav class="footer__menu menu-footer">
-						<ul class="menu-footer__list">
-							<li class="menu-footer__item">
-								<a href="#" data-goto=".specialize" class="menu-footer__link link">Наші послуги</a>
-							</li>
-							<li class="menu-footer__item">
-								<a href="#" data-goto=".about" class="menu-footer__link link">Про компанію</a>
-							</li>
-							<li class="menu-footer__item">
-								<a href="#" data-goto=".works" class="menu-footer__link link">Готові проєкти</a>
-							</li>
-						</ul>
-					</nav>
+					<a href="#" data-goto=".specialize" class="menu-footer__link link">Наші послуги</a>
+					<a href="#" data-goto=".about" class="menu-footer__link link">Про компанію</a>
+					<a href="#" data-goto=".works" class="menu-footer__link link">Готові проєкти</a>
 					<div class="footer__work-time">
 						<h4 class="footer__label">Графік роботи:</h4>
 						<div class="footer__text">
@@ -882,7 +872,6 @@
 			</div>
 		</footer>
 
-
 	</div>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
@@ -892,11 +881,11 @@
 				</button>
 				<div class="popup__body">
 					<h2 class="popup__title">Залиште свої дані та ми Вам зателефонуємо</h2>
-					<form data-ajax method="post" data-popup-message="#popup-thanks" action="components/sendmail/sendmail.php" class="popup__form form-popup">
-						<input type="tel" class="form-popup__input input" name="phone" required placeholder="+38 (090) 000 00 00" />
-						<input type="text" class="form-popup__input input" name="fio" required placeholder="Ваше ім’я та прізвище" />
-						<input type="text" class="form-popup__input input" name="address" required placeholder="Адреса об’єкта *" />
-						<textarea name="message" placeholder="Коментар" id="" cols="30" rows="10" class="form-popup__textarea input"></textarea>
+					<form data-ajax method="post" data-google-forms="https://script.google.com/macros/s/AKfycbypE_TxcpEo1FKbkNuAUsZGMCZfOpH2Qn3tcvUsz2l58_oYjKE5r6BDFUOu5-uh_L0c_g/exec" data-popup-message="#popup-thanks" action="components/sendmail/sendmail.php" class="popup__form form-popup">
+						<input type="tel" class="form-popup__input input" name="p1" required placeholder="+38 (090) 000 00 00" />
+						<input type="text" class="form-popup__input input" name="p2" required placeholder="Ваше ім’я та прізвище" />
+						<input type="text" class="form-popup__input input" name="p3" required placeholder="Адреса об’єкта *" />
+						<textarea name="p4" placeholder="Коментар" id="" cols="30" rows="10" class="form-popup__textarea input"></textarea>
 						<button class="form-popup__button button button--gold">Надіслати</button>
 					</form>
 				</div>
@@ -1038,7 +1027,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240320173544"></script>
+	<script src="js/app.min.js?_v=20240320195704"></script>
 
 </body>
 
