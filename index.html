@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240319222727">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240320171445">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
 								<a href="#" data-goto=".faq" class="menu__link link">FAQ</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" data-goto=".consult__wrapper" class="menu__link link">Контакти</a>
+								<a href="#" data-goto=".footer" class="menu__link link">Контакти</a>
 							</li>
 						</ul>
 					</nav>
@@ -60,6 +60,7 @@
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
+			<a href="#" data-goto=".main-block" class="button-to-top button--gold _icon-arrow-top"></a>
 		</header>
 
 		<main class="home">
@@ -133,7 +134,7 @@
 							</div>
 						</div>
 						<div data-spollers data-one-spoller class="super-spollers__spollers spollers">
-							<details data-open class="spollers__item">
+							<details class="spollers__item">
 								<summary class="spollers__title">
 									Повний цикл послуг
 									<span class="spollers__icons"><span class="spollers__open _icon-arrow-right-bottom"></span><span class="spollers__close _icon-exit"></span></span>
@@ -210,29 +211,29 @@
 						</div>
 						<ul class="heading-specialize__list">
 							<li class="heading-specialize__list-item">
-								<a href="#" class="heading-specialize__item-link">
+								<a href="#" data-goto="._gazebos" class="heading-specialize__item-link">
 									Тераси та альтанки</a>
 							</li>
 							<li class="heading-specialize__list-item">
-								<a href="#" class="heading-specialize__item-link">
+								<a href="#" data-goto="._build" class="heading-specialize__item-link">
 									Приватні будинки</a>
 							</li>
 							<li class="heading-specialize__list-item">
-								<a href="#" class="heading-specialize__item-link">
+								<a href="#" data-goto="._office" class="heading-specialize__item-link">
 									Офісні перегородки</a>
 							</li>
 							<li class="heading-specialize__list-item">
-								<a href="#" class="heading-specialize__item-link">
+								<a href="#" data-goto="._cafe" class="heading-specialize__item-link">
 									Ресторанний бізнес</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="specialize__section section-specialize">
+				<div class="specialize__section section-specialize _gazebos">
 					<div class="section-specialize__main-block">
 						<div class="section-specialize__container">
 							<h3 class="section-specialize__label">Тераси та альтанки</h3>
-							<div data-prlx-mouse class="section-specialize__offer offer-section-specialize">
+							<div class="section-specialize__offer offer-section-specialize">
 								<h3 class="offer-section-specialize__title">
 									Розувні системи для  терас та альтанок
 								</h3>
@@ -259,37 +260,50 @@
 									<a href="#" class="offer-section-specialize__arrow _icon-arrow-right button--transperent"></a>
 								</div>
 							</div>
+							<div class="section-specialize__slider swiper">
+								<div class="section-specialize__wrapper swiper-wrapper">
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/terrace-01.webp" type="image/webp"><img src="img/terrace-01.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/terrace-02.webp" type="image/webp"><img src="img/terrace-02.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/terrace-03.webp" type="image/webp"><img src="img/terrace-03.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/terrace-04.webp" type="image/webp"><img src="img/terrace-04.jpeg" alt="" /></picture>
+										</div>
+									</div>
+								</div>
+								<div class="section-specialize__swiper-buttons">
+									<button type="button" class="swiper-button-prev _icon-arrow-left button--gold"></button>
+									<button type="button" class="swiper-button-next _icon-arrow-right button--gold"></button>
+								</div>
+							</div>
 							<a href="#" class="section-specialize__more-button">Дивитись більше</a>
+
 							<a data-popup="#popup" href="#" class="section-specialize__mobile-order button button--gold">Замовити заміри</a>
+							<a href="#" class="section-specialize__hide-button">Згорнути</a>
 						</div>
-					</div>
-					<div class="section-specialize__slider swiper">
-						<div class="section-specialize__wrapper swiper-wrapper">
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/terrace-01.webp" type="image/webp"><img src="img/terrace-01.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/terrace-02.webp" type="image/webp"><img src="img/terrace-02.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/terrace-03.webp" type="image/webp"><img src="img/terrace-03.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/terrace-04.webp" type="image/webp"><img src="img/terrace-04.jpeg" alt="" /></picture>
-							</div>
-						</div>
-						<div class="section-specialize__swiper-buttons">
-							<button type="button" class="swiper-button-prev _icon-arrow-left button--gold"></button>
-							<button type="button" class="swiper-button-next _icon-arrow-right button--gold"></button>
-						</div>
-						<button class="section-specialize__close-btn _icon-exit"></button>
 					</div>
 				</div>
-				<div class="specialize__section section-specialize">
+				<div class="specialize__section section-specialize _build">
 					<div class="section-specialize__main-block">
 						<div class="section-specialize__container">
 							<h3 class="section-specialize__label">Приватні будинки</h3>
-							<div data-prlx-mouse data-prlx-dxr class="section-specialize__offer offer-section-specialize">
+							<div class="section-specialize__offer offer-section-specialize">
 								<h3 class="offer-section-specialize__title">
 									Сучасні системи скління будинків
 								</h3>
@@ -322,37 +336,50 @@
 									<a href="#" class="offer-section-specialize__arrow _icon-arrow-right button--transperent"></a>
 								</div>
 							</div>
+							<div class="section-specialize__slider swiper">
+								<div class="section-specialize__wrapper swiper-wrapper">
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/build-01.webp" type="image/webp"><img src="img/build-01.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/build-02.webp" type="image/webp"><img src="img/build-02.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/build-03.webp" type="image/webp"><img src="img/build-03.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/build-04.webp" type="image/webp"><img src="img/build-04.jpeg" alt="" /></picture>
+										</div>
+									</div>
+								</div>
+								<div class="section-specialize__swiper-buttons">
+									<button type="button" class="swiper-button-prev _icon-arrow-left button--gold"></button>
+									<button type="button" class="swiper-button-next _icon-arrow-right button--gold"></button>
+								</div>
+							</div>
 							<a href="#" class="section-specialize__more-button">Дивитись більше</a>
+
 							<a data-popup="#popup" href="#" class="section-specialize__mobile-order button button--gold">Замовити заміри</a>
+							<a href="#" class="section-specialize__hide-button">Згорнути</a>
 						</div>
-					</div>
-					<div class="section-specialize__slider swiper">
-						<div class="section-specialize__wrapper swiper-wrapper">
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/build-01.webp" type="image/webp"><img src="img/build-01.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/build-02.webp" type="image/webp"><img src="img/build-02.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/build-03.webp" type="image/webp"><img src="img/build-03.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/build-04.webp" type="image/webp"><img src="img/build-04.jpeg" alt="" /></picture>
-							</div>
-						</div>
-						<div class="section-specialize__swiper-buttons">
-							<button type="button" class="swiper-button-prev _icon-arrow-left button--gold"></button>
-							<button type="button" class="swiper-button-next _icon-arrow-right button--gold"></button>
-						</div>
-						<button class="section-specialize__close-btn _icon-exit"></button>
 					</div>
 				</div>
-				<div class="specialize__section section-specialize">
+				<div class="specialize__section section-specialize _office">
 					<div class="section-specialize__main-block">
 						<div class="section-specialize__container">
 							<h3 class="section-specialize__label">Офісні перегородки</h3>
-							<div data-prlx-mouse class="section-specialize__offer offer-section-specialize">
+							<div class="section-specialize__offer offer-section-specialize">
 								<h3 class="offer-section-specialize__title">
 									Перегородки для  офісних просторів
 								</h3>
@@ -379,37 +406,50 @@
 									<a href="#" class="offer-section-specialize__arrow _icon-arrow-right button--transperent"></a>
 								</div>
 							</div>
+							<div class="section-specialize__slider swiper">
+								<div class="section-specialize__wrapper swiper-wrapper">
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/office-01.webp" type="image/webp"><img src="img/office-01.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/office-02.webp" type="image/webp"><img src="img/office-02.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/office-03.webp" type="image/webp"><img src="img/office-03.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/office-04.webp" type="image/webp"><img src="img/office-04.jpeg" alt="" /></picture>
+										</div>
+									</div>
+								</div>
+								<div class="section-specialize__swiper-buttons">
+									<button type="button" class="swiper-button-prev _icon-arrow-left button--gold"></button>
+									<button type="button" class="swiper-button-next _icon-arrow-right button--gold"></button>
+								</div>
+							</div>
 							<a href="#" class="section-specialize__more-button">Дивитись більше</a>
+
 							<a data-popup="#popup" href="#" class="section-specialize__mobile-order button button--gold">Замовити заміри</a>
+							<a href="#" class="section-specialize__hide-button">Згорнути</a>
 						</div>
-					</div>
-					<div class="section-specialize__slider swiper">
-						<div class="section-specialize__wrapper swiper-wrapper">
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/office-01.webp" type="image/webp"><img src="img/office-01.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/office-02.webp" type="image/webp"><img src="img/office-02.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/office-03.webp" type="image/webp"><img src="img/office-03.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/office-04.webp" type="image/webp"><img src="img/office-04.jpeg" alt="" /></picture>
-							</div>
-						</div>
-						<div class="section-specialize__swiper-buttons">
-							<button type="button" class="swiper-button-prev _icon-arrow-left button--gold"></button>
-							<button type="button" class="swiper-button-next _icon-arrow-right button--gold"></button>
-						</div>
-						<button class="section-specialize__close-btn _icon-exit"></button>
 					</div>
 				</div>
-				<div class="specialize__section section-specialize">
+				<div class="specialize__section section-specialize _cafe">
 					<div class="section-specialize__main-block">
 						<div class="section-specialize__container">
 							<h3 class="section-specialize__label">Ресторанний бізнес</h3>
-							<div data-prlx-mouse data-prlx-dxr class="section-specialize__offer offer-section-specialize">
+							<div class="section-specialize__offer offer-section-specialize">
 								<h3 class="offer-section-specialize__title">
 									Розсувні системи для кафе та ресторанів
 								</h3>
@@ -436,30 +476,43 @@
 									<a href="#" class="offer-section-specialize__arrow _icon-arrow-right button--transperent"></a>
 								</div>
 							</div>
+							<div class="section-specialize__slider swiper">
+								<div class="section-specialize__wrapper swiper-wrapper">
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/cafe-01.webp" type="image/webp"><img src="img/cafe-01.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/cafe-02.webp" type="image/webp"><img src="img/cafe-02.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/cafe-03.webp" type="image/webp"><img src="img/cafe-03.jpeg" alt="" /></picture>
+										</div>
+									</div>
+									<div class="section-specialize__slide swiper-slide">
+										<div class="section-specialize__slide-wrapper">
+											<button class="section-specialize__close-btn _icon-exit"></button>
+											<picture><source srcset="img/cafe-04.webp" type="image/webp"><img src="img/cafe-04.jpeg" alt="" /></picture>
+										</div>
+									</div>
+								</div>
+								<div class="section-specialize__swiper-buttons">
+									<button type="button" class="swiper-button-prev _icon-arrow-left button--gold"></button>
+									<button type="button" class="swiper-button-next _icon-arrow-right button--gold"></button>
+								</div>
+							</div>
 							<a href="#" class="section-specialize__more-button">Дивитись більше</a>
+
 							<a data-popup="#popup" href="#" class="section-specialize__mobile-order button button--gold">Замовити заміри</a>
+							<a href="#" class="section-specialize__hide-button">Згорнути</a>
 						</div>
-					</div>
-					<div class="section-specialize__slider swiper">
-						<div class="section-specialize__wrapper swiper-wrapper">
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/cafe-01.webp" type="image/webp"><img src="img/cafe-01.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/cafe-02.webp" type="image/webp"><img src="img/cafe-02.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/cafe-03.webp" type="image/webp"><img src="img/cafe-03.jpeg" alt="" /></picture>
-							</div>
-							<div class="section-specialize__slide swiper-slide">
-								<picture><source srcset="img/cafe-04.webp" type="image/webp"><img src="img/cafe-04.jpeg" alt="" /></picture>
-							</div>
-						</div>
-						<div class="section-specialize__swiper-buttons">
-							<button type="button" class="swiper-button-prev _icon-arrow-left button--gold"></button>
-							<button type="button" class="swiper-button-next _icon-arrow-right button--gold"></button>
-						</div>
-						<button class="section-specialize__close-btn _icon-exit"></button>
 					</div>
 				</div>
 			</div>
@@ -483,7 +536,7 @@
 							</div>
 						</div>
 						<div data-spollers data-one-spoller class="super-spollers__spollers spollers">
-							<details data-open class="spollers__item">
+							<details class="spollers__item">
 								<summary class="spollers__title">
 									1. Проведення замірів
 									<span class="spollers__icons"><span class="spollers__open _icon-arrow-right-bottom"></span><span class="spollers__close _icon-exit"></span></span>
@@ -648,31 +701,40 @@
 					</div>
 					<div class="works__swiper swiper">
 						<div data-gallery class="works__gallery swiper-wrapper gallery" id="lightgallery">
-							<a class="gallery__link swiper-slide" href="img/galeery-01.jpeg" data-lg-size="336-240">
+							<a class="gallery__link swiper-slide" href="img/galeery-01-lg.jpeg" data-lg-size="1000-600">
+								<div class="gallery__label">Скління альтанки</div>
 								<picture><source srcset="img/galeery-01.webp" type="image/webp"><img alt="Сучасне скління" width="336" height="240" src="img/galeery-01.jpeg" /></picture>
 							</a>
-							<a class="gallery__link swiper-slide" href="img/galeery-02.jpeg" data-lg-size="336-240">
+							<a class="gallery__link swiper-slide" href="img/galeery-02-lg.jpeg" data-lg-size="1000-600">
+								<div class="gallery__label">Скління альтанки</div>
 								<picture><source srcset="img/galeery-02.webp" type="image/webp"><img alt="Сучасне скління" width="336" height="240" src="img/galeery-02.jpeg" /></picture>
 							</a>
-							<a class="gallery__link swiper-slide" href="img/galeery-03.jpeg" data-lg-size="336-240">
+							<a class="gallery__link swiper-slide" href="img/galeery-03-lg.jpeg" data-lg-size="1000-600">
+								<div class="gallery__label">Скління альтанки</div>
 								<picture><source srcset="img/galeery-03.webp" type="image/webp"><img alt="Сучасне скління" width="336" height="240" src="img/galeery-03.jpeg" /></picture>
 							</a>
-							<a class="gallery__link swiper-slide" href="img/galeery-04.jpeg" data-lg-size="336-240">
+							<a class="gallery__link swiper-slide" href="img/galeery-04-lg.jpeg" data-lg-size="1000-600">
+								<div class="gallery__label">Скління альтанки</div>
 								<picture><source srcset="img/galeery-04.webp" type="image/webp"><img alt="Сучасне скління" width="336" height="240" src="img/galeery-04.jpeg" /></picture>
 							</a>
-							<a class="gallery__link swiper-slide" href="img/galeery-05.jpeg" data-lg-size="336-240">
+							<a class="gallery__link swiper-slide" href="img/galeery-05-lg.jpeg" data-lg-size="1000-600">
+								<div class="gallery__label">Скління альтанки</div>
 								<picture><source srcset="img/galeery-05.webp" type="image/webp"><img alt="Сучасне скління" width="336" height="240" src="img/galeery-05.jpeg" /></picture>
 							</a>
-							<a class="gallery__link swiper-slide" href="img/galeery-06.jpeg" data-lg-size="336-240">
+							<a class="gallery__link swiper-slide" href="img/galeery-06-lg.jpeg" data-lg-size="1000-600">
+								<div class="gallery__label">Скління альтанки</div>
 								<picture><source srcset="img/galeery-06.webp" type="image/webp"><img alt="Сучасне скління" width="336" height="240" src="img/galeery-06.jpeg" /></picture>
 							</a>
-							<a class="gallery__link swiper-slide" href="img/galeery-07.jpeg" data-lg-size="336-240">
+							<a class="gallery__link swiper-slide" href="img/galeery-07-lg.jpeg" data-lg-size="1000-600">
+								<div class="gallery__label">Скління альтанки</div>
 								<picture><source srcset="img/galeery-07.webp" type="image/webp"><img alt="Сучасне скління" width="336" height="240" src="img/galeery-07.jpeg" /></picture>
 							</a>
-							<a class="gallery__link swiper-slide" href="img/galeery-08.jpeg" data-lg-size="336-240">
+							<a class="gallery__link swiper-slide" href="img/galeery-08-lg.jpeg" data-lg-size="1000-600">
+								<div class="gallery__label">Скління альтанки</div>
 								<picture><source srcset="img/galeery-08.webp" type="image/webp"><img alt="Сучасне скління" width="336" height="240" src="img/galeery-08.jpeg" /></picture>
 							</a>
-							<a class="gallery__link swiper-slide" href="img/galeery-09.jpeg" data-lg-size="336-240">
+							<a class="gallery__link swiper-slide" href="img/galeery-09-lg.jpeg" data-lg-size="1000-600">
+								<div class="gallery__label">Скління альтанки</div>
 								<picture><source srcset="img/galeery-09.webp" type="image/webp"><img alt="Сучасне скління" width="336" height="240" src="img/galeery-09.jpeg" /></picture>
 							</a>
 						</div>
@@ -767,13 +829,13 @@
 					<nav class="footer__menu menu-footer">
 						<ul class="menu-footer__list">
 							<li class="menu-footer__item">
-								<a href="#" class="menu-footer__link link">Наші послуги</a>
+								<a href="#" data-goto=".specialize" class="menu-footer__link link">Наші послуги</a>
 							</li>
 							<li class="menu-footer__item">
-								<a href="#" class="menu-footer__link link">Про компанію</a>
+								<a href="#" data-goto=".about" class="menu-footer__link link">Про компанію</a>
 							</li>
 							<li class="menu-footer__item">
-								<a href="#" class="menu-footer__link link">Готові проєкти</a>
+								<a href="#" data-goto=".works" class="menu-footer__link link">Готові проєкти</a>
 							</li>
 						</ul>
 					</nav>
@@ -819,6 +881,7 @@
 				</div>
 			</div>
 		</footer>
+
 
 	</div>
 	<div id="popup" aria-hidden="true" class="popup">
@@ -975,7 +1038,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240319222727"></script>
+	<script src="js/app.min.js?_v=20240320171445"></script>
 
 </body>
 
