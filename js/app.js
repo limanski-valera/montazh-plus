@@ -748,6 +748,31 @@
                             method: formMethod,
                             body: formData
                         });
+                        if (form.hasAttribute("data-google-forms")) {
+                            const googleFormsUrl = form.dataset.googleForms;
+                            const details = {
+                                name: form.name?.value ? `${form.name?.value.trim()}` : "-",
+                                phone: form.phone?.value ? form.phone?.value.trim() : "-",
+                                address: form.address?.value ? form.address?.value.trim() : "-",
+                                comment: form.comment?.value ? form.comment?.value.trim() : "-"
+                            };
+                            if (details.phone && details.phone[0] === "+") details.phone = details.phone.replace("+", "");
+                            let googleFormBody = [];
+                            for (let property in details) {
+                                let encodeKey = encodeURIComponent(property);
+                                let encodeValue = encodeURIComponent(details[property]);
+                                googleFormBody.push(encodeKey + "=" + encodeValue);
+                            }
+                            googleFormBody = googleFormBody.join("&");
+                            await fetch(googleFormsUrl, {
+                                method: "post",
+                                headers: {
+                                    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+                                },
+                                cors: "no-cors",
+                                body: googleFormBody
+                            });
+                        }
                         if (response.ok) {
                             let responseResult = await response.json();
                             form.classList.remove("_sending");

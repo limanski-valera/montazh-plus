@@ -1954,6 +1954,11 @@ body::after {
     display: block;
   }
 }
+@media (min-width: 47.99875em) {
+  .main-title__main br {
+    display: none;
+  }
+}
 .main-title__part {
   font-weight: 200;
 }
@@ -3050,6 +3055,14 @@ body::after {
   .faq {
     padding-bottom: 3.75rem;
   }
+}
+.faq__title-block {
+  color: var(--color-white);
+  display: block;
+  max-width: 46.5rem;
+}
+.faq__title-block:not(:last-child) {
+  margin-bottom: 1.25rem;
 }
 .faq__spollers {
   max-width: 46.5rem;
